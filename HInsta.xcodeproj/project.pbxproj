@@ -8,21 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		8D9336E528C0EAD300D59498 /* HInstaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9336E428C0EAD300D59498 /* HInstaApp.swift */; };
-		8D9336E728C0EAD300D59498 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9336E628C0EAD300D59498 /* ContentView.swift */; };
 		8D9336E928C0EAD400D59498 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D9336E828C0EAD400D59498 /* Assets.xcassets */; };
 		8D9336EC28C0EAD400D59498 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D9336EB28C0EAD400D59498 /* Preview Assets.xcassets */; };
 		8D9336EE28C0EAD400D59498 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9336ED28C0EAD400D59498 /* Persistence.swift */; };
 		8D9336F128C0EAD400D59498 /* HInsta.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8D9336EF28C0EAD400D59498 /* HInsta.xcdatamodeld */; };
+		8D9336F928C0EB4100D59498 /* PushingSingIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9336F828C0EB4100D59498 /* PushingSingIn.swift */; };
+		8D9336FB28C0EB5000D59498 /* PushingSingUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9336FA28C0EB5000D59498 /* PushingSingUp.swift */; };
+		8D9336FD28C0EB5F00D59498 /* PresentSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9336FC28C0EB5F00D59498 /* PresentSignIn.swift */; };
+		8D9336FF28C0EB7700D59498 /* PresentSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9336FE28C0EB7700D59498 /* PresentSignUp.swift */; };
+		8D93370128C0F2F500D59498 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D93370028C0F2F500D59498 /* HomeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8D9336E128C0EAD300D59498 /* HInsta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HInsta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D9336E428C0EAD300D59498 /* HInstaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HInstaApp.swift; sourceTree = "<group>"; };
-		8D9336E628C0EAD300D59498 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8D9336E828C0EAD400D59498 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D9336EB28C0EAD400D59498 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8D9336ED28C0EAD400D59498 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		8D9336F028C0EAD400D59498 /* HInsta.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HInsta.xcdatamodel; sourceTree = "<group>"; };
+		8D9336F828C0EB4100D59498 /* PushingSingIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushingSingIn.swift; sourceTree = "<group>"; };
+		8D9336FA28C0EB5000D59498 /* PushingSingUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushingSingUp.swift; sourceTree = "<group>"; };
+		8D9336FC28C0EB5F00D59498 /* PresentSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentSignIn.swift; sourceTree = "<group>"; };
+		8D9336FE28C0EB7700D59498 /* PresentSignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentSignUp.swift; sourceTree = "<group>"; };
+		8D93370028C0F2F500D59498 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +63,9 @@
 		8D9336E328C0EAD300D59498 /* HInsta */ = {
 			isa = PBXGroup;
 			children = (
+				8D9336F728C0EB0C00D59498 /* Screens */,
 				8D9336E428C0EAD300D59498 /* HInstaApp.swift */,
-				8D9336E628C0EAD300D59498 /* ContentView.swift */,
+				8D93370028C0F2F500D59498 /* HomeScreen.swift */,
 				8D9336E828C0EAD400D59498 /* Assets.xcassets */,
 				8D9336ED28C0EAD400D59498 /* Persistence.swift */,
 				8D9336EF28C0EAD400D59498 /* HInsta.xcdatamodeld */,
@@ -71,6 +80,17 @@
 				8D9336EB28C0EAD400D59498 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8D9336F728C0EB0C00D59498 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				8D9336F828C0EB4100D59498 /* PushingSingIn.swift */,
+				8D9336FA28C0EB5000D59498 /* PushingSingUp.swift */,
+				8D9336FC28C0EB5F00D59498 /* PresentSignIn.swift */,
+				8D9336FE28C0EB7700D59498 /* PresentSignUp.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,8 +164,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D9336EE28C0EAD400D59498 /* Persistence.swift in Sources */,
-				8D9336E728C0EAD300D59498 /* ContentView.swift in Sources */,
+				8D9336FD28C0EB5F00D59498 /* PresentSignIn.swift in Sources */,
+				8D9336F928C0EB4100D59498 /* PushingSingIn.swift in Sources */,
 				8D9336F128C0EAD400D59498 /* HInsta.xcdatamodeld in Sources */,
+				8D93370128C0F2F500D59498 /* HomeScreen.swift in Sources */,
+				8D9336FF28C0EB7700D59498 /* PresentSignUp.swift in Sources */,
+				8D9336FB28C0EB5000D59498 /* PushingSingUp.swift in Sources */,
 				8D9336E528C0EAD300D59498 /* HInstaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
