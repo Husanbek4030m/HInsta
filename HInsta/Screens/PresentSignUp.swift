@@ -19,8 +19,6 @@ struct PresentSignUp: View {
     @State var password = ""
     
     var body: some View {
-        
-        NavigationView {
             VStack(spacing: 10) {
                 Spacer()
                 
@@ -91,12 +89,7 @@ struct PresentSignUp: View {
 
             }
             .padding(10)
-        }
-        .navigationBarBackButtonHidden(true)
-        .navigationBarHidden(true)
-        
        
-        
     }
 }
 

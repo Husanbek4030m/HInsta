@@ -9,14 +9,12 @@ import SwiftUI
 
 struct PresentSignIn: View {
     @Environment(\.presentationMode) var pr
-    @State private var showAlert = false
+    //@State private var showAlert = false
     @State var showDetail = false
     @State var userId = ""
     @State var userPw = ""
     
-    var body: some View {
-        NavigationView {
-            
+    var body: some View {            
             VStack(spacing: 10) {
                 Spacer()
                 Image("user")
@@ -41,7 +39,9 @@ struct PresentSignIn: View {
                 
                 
                 Button {
-                    self.showAlert = true
+                    UserDefaults.standard.set(true, forKey: "status")
+                    NotificationCenter.default.post(name: NSNotification.Name("status"), object: nil)
+                   // self.showAlert = true
                 } label: {
                     HStack {
                         Spacer()
@@ -51,9 +51,10 @@ struct PresentSignIn: View {
                     .frame(height: 45)
                     .background(Color.red)
                     .cornerRadius(25)
-                }.alert("Tizimga kirdingiz", isPresented: $showAlert) {
-                    Button("Ok", role: .cancel) {}
                 }
+                /*.alert("Tizimga kirdingiz", isPresented: $showAlert) {
+                    Button("Ok", role: .cancel) {}
+                }*/
                 
                 Spacer()
                 
@@ -73,23 +74,7 @@ struct PresentSignIn: View {
                     }
 
                 }
-
-                
-            }.padding()
-                .toolbar {
-                    ToolbarItem(placement: .navigationBarLeading) {
-                        Button {
-                            pr.wrappedValue.dismiss()
-                        } label: {
-                            Image(systemName: "chevron.left")
-                        }
-
-                    }
-                }
-                .navigationBarTitle("Present Sign In", displayMode: .inline)
-        }
-        .navigationBarBackButtonHidden(true)
-        .navigationBarHidden(true)
+            }.padding()             
         
     }
 }

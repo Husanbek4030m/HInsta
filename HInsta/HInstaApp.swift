@@ -15,6 +15,7 @@ struct HInstaApp: App {
         WindowGroup {
             HomeScreen()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(Status())
         }
     }
 }

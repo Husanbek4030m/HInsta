@@ -9,13 +9,13 @@ import SwiftUI
 
 struct PushingSingIn: View {
     @Environment(\.presentationMode) var pr
+    @EnvironmentObject var status:Status
+    
     @State private var showAlert = false
     @State var userId = ""
     @State var userPw = ""
     
     var body: some View {
-        NavigationView {
-            
             VStack(spacing: 10) {
                 Spacer()
                 Image("user")
@@ -40,7 +40,9 @@ struct PushingSingIn: View {
                 
                 
                 Button {
-                    self.showAlert = true
+                    UserDefaults.standard.set("Husan", forKey: "userId")
+                    status.listener()
+                    //self.showAlert = true
                 } label: {
                     HStack {
                         Spacer()
@@ -50,9 +52,10 @@ struct PushingSingIn: View {
                     .frame(height: 45)
                     .background(Color.red)
                     .cornerRadius(25)
-                }.alert("Tizimga kirdingiz", isPresented: $showAlert) {
-                    Button("Ok", role: .cancel) {}
                 }
+                /*.alert("Tizimga kirdingiz", isPresented: $showAlert) {
+                    Button("Ok", role: .cancel) {}
+                }*/
                 
                 Spacer()
                 
@@ -67,25 +70,8 @@ struct PushingSingIn: View {
                         Text("SignUp")
                             .font(.system(size: 14))
                     }
-
-                }
-
-                
+                }                
             }.padding()
-                .toolbar {
-                    ToolbarItem(placement: .navigationBarLeading) {
-                        Button {
-                            pr.wrappedValue.dismiss()
-                        } label: {
-                            Image(systemName: "chevron.left")
-                        }
-
-                    }
-                }
-                .navigationBarTitle("Pushshing Sign In", displayMode: .inline)
-        }
-        .navigationBarBackButtonHidden(true)
-        .navigationBarHidden(true)
         
     }
 }

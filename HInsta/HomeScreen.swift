@@ -10,24 +10,20 @@ import SwiftUI
 struct HomeScreen: View {
     var body: some View {
         NavigationView {
-            VStack {
+            VStack(alignment: .center, spacing: 10, content: {
                 NavigationLink {
-                    PushingSingIn()
+                    PushingBase()
                 } label: {
-                    Text("Pushing Sign in").padding(10)
-                }
-                
-                NavigationLink {
-                    PresentSignIn()
-                } label: {
-                    Text("Present Sign in").padding(10)
+                    Text("Observable Object").padding(10)
                 }
 
-
-            }
-            .navigationBarTitle("Instagram Sign", displayMode: .inline)
+                NavigationLink {
+                    PresentBase()
+                } label: {
+                    Text("Notification Center").padding(10)
+                }
+            })
         }
-        
         
         
     }

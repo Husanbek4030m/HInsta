@@ -17,6 +17,11 @@
 		8D9336FD28C0EB5F00D59498 /* PresentSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9336FC28C0EB5F00D59498 /* PresentSignIn.swift */; };
 		8D9336FF28C0EB7700D59498 /* PresentSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9336FE28C0EB7700D59498 /* PresentSignUp.swift */; };
 		8D93370128C0F2F500D59498 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D93370028C0F2F500D59498 /* HomeScreen.swift */; };
+		8DBA685F28C210C5007E0CC1 /* PushingBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBA685E28C210C5007E0CC1 /* PushingBase.swift */; };
+		8DBA686128C210D4007E0CC1 /* PresentBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBA686028C210D4007E0CC1 /* PresentBase.swift */; };
+		8DBA686528C21385007E0CC1 /* PushingDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBA686428C21385007E0CC1 /* PushingDetail.swift */; };
+		8DBA686728C21470007E0CC1 /* PresentDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBA686628C21470007E0CC1 /* PresentDetail.swift */; };
+		8DBA686A28C22200007E0CC1 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBA686928C22200007E0CC1 /* Status.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +36,11 @@
 		8D9336FC28C0EB5F00D59498 /* PresentSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentSignIn.swift; sourceTree = "<group>"; };
 		8D9336FE28C0EB7700D59498 /* PresentSignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentSignUp.swift; sourceTree = "<group>"; };
 		8D93370028C0F2F500D59498 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		8DBA685E28C210C5007E0CC1 /* PushingBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushingBase.swift; sourceTree = "<group>"; };
+		8DBA686028C210D4007E0CC1 /* PresentBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentBase.swift; sourceTree = "<group>"; };
+		8DBA686428C21385007E0CC1 /* PushingDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushingDetail.swift; sourceTree = "<group>"; };
+		8DBA686628C21470007E0CC1 /* PresentDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentDetail.swift; sourceTree = "<group>"; };
+		8DBA686928C22200007E0CC1 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,7 @@
 		8D9336E328C0EAD300D59498 /* HInsta */ = {
 			isa = PBXGroup;
 			children = (
+				8DBA686828C221F2007E0CC1 /* utils */,
 				8D9336F728C0EB0C00D59498 /* Screens */,
 				8D9336E428C0EAD300D59498 /* HInstaApp.swift */,
 				8D93370028C0F2F500D59498 /* HomeScreen.swift */,
@@ -85,12 +96,24 @@
 		8D9336F728C0EB0C00D59498 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				8DBA685E28C210C5007E0CC1 /* PushingBase.swift */,
 				8D9336F828C0EB4100D59498 /* PushingSingIn.swift */,
 				8D9336FA28C0EB5000D59498 /* PushingSingUp.swift */,
+				8DBA686428C21385007E0CC1 /* PushingDetail.swift */,
+				8DBA686028C210D4007E0CC1 /* PresentBase.swift */,
 				8D9336FC28C0EB5F00D59498 /* PresentSignIn.swift */,
 				8D9336FE28C0EB7700D59498 /* PresentSignUp.swift */,
+				8DBA686628C21470007E0CC1 /* PresentDetail.swift */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		8DBA686828C221F2007E0CC1 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				8DBA686928C22200007E0CC1 /* Status.swift */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,10 +190,15 @@
 				8D9336FD28C0EB5F00D59498 /* PresentSignIn.swift in Sources */,
 				8D9336F928C0EB4100D59498 /* PushingSingIn.swift in Sources */,
 				8D9336F128C0EAD400D59498 /* HInsta.xcdatamodeld in Sources */,
+				8DBA686128C210D4007E0CC1 /* PresentBase.swift in Sources */,
 				8D93370128C0F2F500D59498 /* HomeScreen.swift in Sources */,
+				8DBA686728C21470007E0CC1 /* PresentDetail.swift in Sources */,
 				8D9336FF28C0EB7700D59498 /* PresentSignUp.swift in Sources */,
 				8D9336FB28C0EB5000D59498 /* PushingSingUp.swift in Sources */,
+				8DBA686A28C22200007E0CC1 /* Status.swift in Sources */,
+				8DBA685F28C210C5007E0CC1 /* PushingBase.swift in Sources */,
 				8D9336E528C0EAD300D59498 /* HInstaApp.swift in Sources */,
+				8DBA686528C21385007E0CC1 /* PushingDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
