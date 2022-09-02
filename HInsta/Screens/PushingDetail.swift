@@ -13,23 +13,32 @@ struct PushingDetail: View {
     
     var body: some View {
         NavigationView {
-            VStack {
-                //header
-                
-                
-                //List
-                List {
-                        PostItems(img_url: "001")
+            
                     
-                        PostItems(img_url: "002")
-                    
-                        PostItems(img_url: "003")
-                    
-                        PostItems(img_url: "004")
-                }.listStyle(.plain)
-                    .padding(.leading, -20)
-                
-            }
+                    //List
+                    List {
+                        //header
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            HStack {
+                                AddStory()
+                                ItemStory()
+                                ItemStory()
+                                ItemStory()
+                                ItemStory()
+                                ItemStory()
+                                ItemStory()
+                            }.padding(5)
+                        }
+                        
+                            PostItems(img_url: "001")
+                        
+                            PostItems(img_url: "002")
+                        
+                            PostItems(img_url: "003")
+                        
+                            PostItems(img_url: "004")
+                    }.listStyle(.plain)
+                        .padding(.leading, -20)
             .navigationTitle("HInstagram")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {

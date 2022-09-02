@@ -24,6 +24,8 @@
 		8DBA686A28C22200007E0CC1 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBA686928C22200007E0CC1 /* Status.swift */; };
 		8DBA686D28C22D90007E0CC1 /* PostItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBA686C28C22D90007E0CC1 /* PostItems.swift */; };
 		8DBA686F28C22F01007E0CC1 /* ScreenExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBA686E28C22F01007E0CC1 /* ScreenExt.swift */; };
+		8DBA687128C2423B007E0CC1 /* ItemStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBA687028C2423B007E0CC1 /* ItemStory.swift */; };
+		8DBA687328C2453F007E0CC1 /* AddStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBA687228C2453F007E0CC1 /* AddStory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		8DBA686928C22200007E0CC1 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		8DBA686C28C22D90007E0CC1 /* PostItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostItems.swift; sourceTree = "<group>"; };
 		8DBA686E28C22F01007E0CC1 /* ScreenExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenExt.swift; sourceTree = "<group>"; };
+		8DBA687028C2423B007E0CC1 /* ItemStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStory.swift; sourceTree = "<group>"; };
+		8DBA687228C2453F007E0CC1 /* AddStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				8DBA686C28C22D90007E0CC1 /* PostItems.swift */,
+				8DBA687028C2423B007E0CC1 /* ItemStory.swift */,
+				8DBA687228C2453F007E0CC1 /* AddStory.swift */,
 			);
 			path = cells;
 			sourceTree = "<group>";
@@ -209,7 +215,9 @@
 				8D93370128C0F2F500D59498 /* HomeScreen.swift in Sources */,
 				8DBA686728C21470007E0CC1 /* PresentDetail.swift in Sources */,
 				8D9336FF28C0EB7700D59498 /* PresentSignUp.swift in Sources */,
+				8DBA687328C2453F007E0CC1 /* AddStory.swift in Sources */,
 				8D9336FB28C0EB5000D59498 /* PushingSingUp.swift in Sources */,
+				8DBA687128C2423B007E0CC1 /* ItemStory.swift in Sources */,
 				8DBA686F28C22F01007E0CC1 /* ScreenExt.swift in Sources */,
 				8DBA686A28C22200007E0CC1 /* Status.swift in Sources */,
 				8DBA685F28C210C5007E0CC1 /* PushingBase.swift in Sources */,
