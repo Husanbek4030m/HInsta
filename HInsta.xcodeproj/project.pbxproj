@@ -22,6 +22,8 @@
 		8DBA686528C21385007E0CC1 /* PushingDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBA686428C21385007E0CC1 /* PushingDetail.swift */; };
 		8DBA686728C21470007E0CC1 /* PresentDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBA686628C21470007E0CC1 /* PresentDetail.swift */; };
 		8DBA686A28C22200007E0CC1 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBA686928C22200007E0CC1 /* Status.swift */; };
+		8DBA686D28C22D90007E0CC1 /* PostItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBA686C28C22D90007E0CC1 /* PostItems.swift */; };
+		8DBA686F28C22F01007E0CC1 /* ScreenExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBA686E28C22F01007E0CC1 /* ScreenExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		8DBA686428C21385007E0CC1 /* PushingDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushingDetail.swift; sourceTree = "<group>"; };
 		8DBA686628C21470007E0CC1 /* PresentDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentDetail.swift; sourceTree = "<group>"; };
 		8DBA686928C22200007E0CC1 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		8DBA686C28C22D90007E0CC1 /* PostItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostItems.swift; sourceTree = "<group>"; };
+		8DBA686E28C22F01007E0CC1 /* ScreenExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,7 @@
 		8D9336E328C0EAD300D59498 /* HInsta */ = {
 			isa = PBXGroup;
 			children = (
+				8DBA686B28C22D7E007E0CC1 /* cells */,
 				8DBA686828C221F2007E0CC1 /* utils */,
 				8D9336F728C0EB0C00D59498 /* Screens */,
 				8D9336E428C0EAD300D59498 /* HInstaApp.swift */,
@@ -112,8 +117,17 @@
 			isa = PBXGroup;
 			children = (
 				8DBA686928C22200007E0CC1 /* Status.swift */,
+				8DBA686E28C22F01007E0CC1 /* ScreenExt.swift */,
 			);
 			path = utils;
+			sourceTree = "<group>";
+		};
+		8DBA686B28C22D7E007E0CC1 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				8DBA686C28C22D90007E0CC1 /* PostItems.swift */,
+			);
+			path = cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +202,7 @@
 			files = (
 				8D9336EE28C0EAD400D59498 /* Persistence.swift in Sources */,
 				8D9336FD28C0EB5F00D59498 /* PresentSignIn.swift in Sources */,
+				8DBA686D28C22D90007E0CC1 /* PostItems.swift in Sources */,
 				8D9336F928C0EB4100D59498 /* PushingSingIn.swift in Sources */,
 				8D9336F128C0EAD400D59498 /* HInsta.xcdatamodeld in Sources */,
 				8DBA686128C210D4007E0CC1 /* PresentBase.swift in Sources */,
@@ -195,6 +210,7 @@
 				8DBA686728C21470007E0CC1 /* PresentDetail.swift in Sources */,
 				8D9336FF28C0EB7700D59498 /* PresentSignUp.swift in Sources */,
 				8D9336FB28C0EB5000D59498 /* PushingSingUp.swift in Sources */,
+				8DBA686F28C22F01007E0CC1 /* ScreenExt.swift in Sources */,
 				8DBA686A28C22200007E0CC1 /* Status.swift in Sources */,
 				8DBA685F28C210C5007E0CC1 /* PushingBase.swift in Sources */,
 				8D9336E528C0EAD300D59498 /* HInstaApp.swift in Sources */,

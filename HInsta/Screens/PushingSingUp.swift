@@ -19,8 +19,6 @@ struct PushingSingUp: View {
     @State var password = ""
     
     var body: some View {
-        
-        NavigationView {
             VStack(spacing: 10) {
                 Spacer()
                 
@@ -91,9 +89,6 @@ struct PushingSingUp: View {
 
             }
             .padding(10)
-        }
-        .navigationBarBackButtonHidden(true)
-        .navigationBarHidden(true)
         
        
         

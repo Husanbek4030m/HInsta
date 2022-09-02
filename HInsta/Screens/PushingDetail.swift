@@ -13,18 +13,43 @@ struct PushingDetail: View {
     
     var body: some View {
         NavigationView {
-            VStack{
-                Button {
-                    UserDefaults.standard.removeObject(forKey: "userId")
-                    status.listener()
-                } label: {
-                    Text("Logout")
-                }
-
+            VStack {
+                //header
+                
+                
+                //List
+                List {
+                        PostItems(img_url: "001")
+                    
+                        PostItems(img_url: "002")
+                    
+                        PostItems(img_url: "003")
+                    
+                        PostItems(img_url: "004")
+                }.listStyle(.plain)
+                    .padding(.leading, -20)
+                
             }
-        }
-        .navigationBarItems(leading: Image(systemName: "camera"), trailing: Image(systemName: "location"))
-        .navigationBarTitle("Instagram", displayMode: .inline)
+            .navigationTitle("HInstagram")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Image(systemName: "camera").foregroundColor(Color.red)
+                }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(
+                        action: {
+                            UserDefaults.standard.removeObject(forKey: "userId")
+                            status.listener()
+                        },
+                        label: {
+                            Image(systemName: "rectangle.portrait.and.arrow.right")
+                                .foregroundColor(Color.red)
+                        }
+                    )
+                }
+            }
+        }.navigationViewStyle(.stack)
     }
 }
 

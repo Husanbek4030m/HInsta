@@ -16,6 +16,7 @@ struct PushingSingIn: View {
     @State var userPw = ""
     
     var body: some View {
+        NavigationView {
             VStack(spacing: 10) {
                 Spacer()
                 Image("user")
@@ -72,7 +73,22 @@ struct PushingSingIn: View {
                     }
                 }                
             }.padding()
-        
+                .navigationBarTitle("Observ Login", displayMode: .inline)
+                .toolbar {
+                  ToolbarItem(placement: .navigationBarLeading) {
+                      Button {
+                          pr.wrappedValue.dismiss()
+                      } label: {
+                          Image(systemName: "chevron.left")
+                      }
+
+                  }
+              }
+                
+            }
+            .navigationViewStyle(.stack)
+            .navigationBarBackButtonHidden(true)
+            .navigationBarHidden(true)
     }
 }
 

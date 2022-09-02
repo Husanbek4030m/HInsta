@@ -13,7 +13,6 @@ struct PushingBase: View {
     @Environment(\.presentationMode) var pr
     
     var body: some View {
-        NavigationView {
             VStack {
                 if self.status.userId != nil {
                     PushingDetail()
@@ -23,22 +22,6 @@ struct PushingBase: View {
             }.onAppear {
                 status.listener()
             }
-            .navigationBarTitle("Observ Base", displayMode: .inline)
-            .toolbar {
-              ToolbarItem(placement: .navigationBarLeading) {
-                  Button {
-                      pr.wrappedValue.dismiss()
-                  } label: {
-                      Image(systemName: "chevron.left")
-                  }
-
-              }
-          }
-            
-        }
-        .navigationViewStyle(StackNavigationViewStyle())
-        .navigationBarBackButtonHidden(true)
-        .navigationBarHidden(true)
         
     }
 }
